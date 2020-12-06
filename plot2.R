@@ -11,7 +11,7 @@ Data_Set <- filter(Data_Set, Date == "2007-02-01", Date == "2007-02-02")
 # Creating the data points of one of the plot axes
 Global_active_power <- Data_Set$Global_active_power
 Global_active_power <- as.numeric(Global_active_power)
-# Creating the data points of one of the plot axes
+# Creating the data points of the other plot axis
 date_axis <- paste(Data_Set$Date, Data_Set$Time) 
 date_axis <- strptime(date_axis, "%Y/%m/%d %H:%M:%S")
 # Plotting
